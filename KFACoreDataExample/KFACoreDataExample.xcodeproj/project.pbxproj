@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6954F88E1B32559900DA38C5 /* KFADataStoreTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 6954F88D1B32559900DA38C5 /* KFADataStoreTools.m */; };
+		696BE3401B318EED000AA54F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 696BE33F1B318EED000AA54F /* main.m */; };
+		696BE3431B318EED000AA54F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 696BE3421B318EED000AA54F /* AppDelegate.m */; };
+		696BE3491B318EED000AA54F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696BE3471B318EED000AA54F /* Main.storyboard */; };
+		696BE34B1B318EED000AA54F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 696BE34A1B318EED000AA54F /* Images.xcassets */; };
+		696BE34E1B318EED000AA54F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 696BE34C1B318EED000AA54F /* LaunchScreen.xib */; };
+		696BE35A1B318EED000AA54F /* KFACoreDataExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 696BE3591B318EED000AA54F /* KFACoreDataExampleTests.m */; };
+		696BE3651B318F8F000AA54F /* KFACoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 696BE3631B318F8F000AA54F /* KFACoreDataModel.xcdatamodeld */; };
+		696BE3681B31A3CE000AA54F /* KFAGroupTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 696BE3671B31A3CE000AA54F /* KFAGroupTableViewController.m */; };
+		696BE36B1B31A3E1000AA54F /* KFAGroupDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 696BE36A1B31A3E1000AA54F /* KFAGroupDetailTableViewController.m */; };
+		696BE3771B31A700000AA54F /* KFACeo.m in Sources */ = {isa = PBXBuildFile; fileRef = 696BE3761B31A700000AA54F /* KFACeo.m */; };
+		696BE37A1B31A701000AA54F /* KFAGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 696BE3791B31A701000AA54F /* KFAGroup.m */; };
+		696BE37D1B31A701000AA54F /* KFAWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 696BE37C1B31A701000AA54F /* KFAWorker.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		696BE3541B318EED000AA54F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 696BE3321B318EED000AA54F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 696BE3391B318EED000AA54F;
+			remoteInfo = KFACoreDataExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6954F88C1B32559900DA38C5 /* KFADataStoreTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFADataStoreTools.h; sourceTree = "<group>"; };
+		6954F88D1B32559900DA38C5 /* KFADataStoreTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFADataStoreTools.m; sourceTree = "<group>"; };
+		696BE33A1B318EED000AA54F /* KFACoreDataExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KFACoreDataExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		696BE33E1B318EED000AA54F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		696BE33F1B318EED000AA54F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		696BE3411B318EED000AA54F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		696BE3421B318EED000AA54F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		696BE3481B318EED000AA54F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		696BE34A1B318EED000AA54F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		696BE34D1B318EED000AA54F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		696BE3531B318EED000AA54F /* KFACoreDataExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KFACoreDataExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		696BE3581B318EED000AA54F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		696BE3591B318EED000AA54F /* KFACoreDataExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFACoreDataExampleTests.m; sourceTree = "<group>"; };
+		696BE3641B318F8F000AA54F /* KFACoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KFACoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		696BE3661B31A3CE000AA54F /* KFAGroupTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFAGroupTableViewController.h; sourceTree = "<group>"; };
+		696BE3671B31A3CE000AA54F /* KFAGroupTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFAGroupTableViewController.m; sourceTree = "<group>"; };
+		696BE3691B31A3E1000AA54F /* KFAGroupDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFAGroupDetailTableViewController.h; sourceTree = "<group>"; };
+		696BE36A1B31A3E1000AA54F /* KFAGroupDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFAGroupDetailTableViewController.m; sourceTree = "<group>"; };
+		696BE3751B31A700000AA54F /* KFACeo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFACeo.h; sourceTree = "<group>"; };
+		696BE3761B31A700000AA54F /* KFACeo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFACeo.m; sourceTree = "<group>"; };
+		696BE3781B31A701000AA54F /* KFAGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFAGroup.h; sourceTree = "<group>"; };
+		696BE3791B31A701000AA54F /* KFAGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFAGroup.m; sourceTree = "<group>"; };
+		696BE37B1B31A701000AA54F /* KFAWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFAWorker.h; sourceTree = "<group>"; };
+		696BE37C1B31A701000AA54F /* KFAWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFAWorker.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		696BE3371B318EED000AA54F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		696BE3501B318EED000AA54F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		696BE3311B318EED000AA54F = {
+			isa = PBXGroup;
+			children = (
+				696BE33C1B318EED000AA54F /* KFACoreDataExample */,
+				696BE3561B318EED000AA54F /* KFACoreDataExampleTests */,
+				696BE33B1B318EED000AA54F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		696BE33B1B318EED000AA54F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				696BE33A1B318EED000AA54F /* KFACoreDataExample.app */,
+				696BE3531B318EED000AA54F /* KFACoreDataExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		696BE33C1B318EED000AA54F /* KFACoreDataExample */ = {
+			isa = PBXGroup;
+			children = (
+				696BE3411B318EED000AA54F /* AppDelegate.h */,
+				696BE3421B318EED000AA54F /* AppDelegate.m */,
+				6954F88C1B32559900DA38C5 /* KFADataStoreTools.h */,
+				6954F88D1B32559900DA38C5 /* KFADataStoreTools.m */,
+				696BE3661B31A3CE000AA54F /* KFAGroupTableViewController.h */,
+				696BE3671B31A3CE000AA54F /* KFAGroupTableViewController.m */,
+				696BE3691B31A3E1000AA54F /* KFAGroupDetailTableViewController.h */,
+				696BE36A1B31A3E1000AA54F /* KFAGroupDetailTableViewController.m */,
+				696BE37B1B31A701000AA54F /* KFAWorker.h */,
+				696BE37C1B31A701000AA54F /* KFAWorker.m */,
+				696BE3781B31A701000AA54F /* KFAGroup.h */,
+				696BE3791B31A701000AA54F /* KFAGroup.m */,
+				696BE3751B31A700000AA54F /* KFACeo.h */,
+				696BE3761B31A700000AA54F /* KFACeo.m */,
+				696BE3471B318EED000AA54F /* Main.storyboard */,
+				696BE34A1B318EED000AA54F /* Images.xcassets */,
+				696BE34C1B318EED000AA54F /* LaunchScreen.xib */,
+				696BE33D1B318EED000AA54F /* Supporting Files */,
+				696BE3631B318F8F000AA54F /* KFACoreDataModel.xcdatamodeld */,
+			);
+			path = KFACoreDataExample;
+			sourceTree = "<group>";
+		};
+		696BE33D1B318EED000AA54F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				696BE33E1B318EED000AA54F /* Info.plist */,
+				696BE33F1B318EED000AA54F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		696BE3561B318EED000AA54F /* KFACoreDataExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				696BE3591B318EED000AA54F /* KFACoreDataExampleTests.m */,
+				696BE3571B318EED000AA54F /* Supporting Files */,
+			);
+			path = KFACoreDataExampleTests;
+			sourceTree = "<group>";
+		};
+		696BE3571B318EED000AA54F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				696BE3581B318EED000AA54F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		696BE3391B318EED000AA54F /* KFACoreDataExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 696BE35D1B318EED000AA54F /* Build configuration list for PBXNativeTarget "KFACoreDataExample" */;
+			buildPhases = (
+				696BE3361B318EED000AA54F /* Sources */,
+				696BE3371B318EED000AA54F /* Frameworks */,
+				696BE3381B318EED000AA54F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KFACoreDataExample;
+			productName = KFACoreDataExample;
+			productReference = 696BE33A1B318EED000AA54F /* KFACoreDataExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		696BE3521B318EED000AA54F /* KFACoreDataExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 696BE3601B318EED000AA54F /* Build configuration list for PBXNativeTarget "KFACoreDataExampleTests" */;
+			buildPhases = (
+				696BE34F1B318EED000AA54F /* Sources */,
+				696BE3501B318EED000AA54F /* Frameworks */,
+				696BE3511B318EED000AA54F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				696BE3551B318EED000AA54F /* PBXTargetDependency */,
+			);
+			name = KFACoreDataExampleTests;
+			productName = KFACoreDataExampleTests;
+			productReference = 696BE3531B318EED000AA54F /* KFACoreDataExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		696BE3321B318EED000AA54F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "柯梵Aaron";
+				TargetAttributes = {
+					696BE3391B318EED000AA54F = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					696BE3521B318EED000AA54F = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 696BE3391B318EED000AA54F;
+					};
+				};
+			};
+			buildConfigurationList = 696BE3351B318EED000AA54F /* Build configuration list for PBXProject "KFACoreDataExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 696BE3311B318EED000AA54F;
+			productRefGroup = 696BE33B1B318EED000AA54F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				696BE3391B318EED000AA54F /* KFACoreDataExample */,
+				696BE3521B318EED000AA54F /* KFACoreDataExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		696BE3381B318EED000AA54F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				696BE3491B318EED000AA54F /* Main.storyboard in Resources */,
+				696BE34E1B318EED000AA54F /* LaunchScreen.xib in Resources */,
+				696BE34B1B318EED000AA54F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		696BE3511B318EED000AA54F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		696BE3361B318EED000AA54F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6954F88E1B32559900DA38C5 /* KFADataStoreTools.m in Sources */,
+				696BE3431B318EED000AA54F /* AppDelegate.m in Sources */,
+				696BE3401B318EED000AA54F /* main.m in Sources */,
+				696BE37D1B31A701000AA54F /* KFAWorker.m in Sources */,
+				696BE3681B31A3CE000AA54F /* KFAGroupTableViewController.m in Sources */,
+				696BE37A1B31A701000AA54F /* KFAGroup.m in Sources */,
+				696BE36B1B31A3E1000AA54F /* KFAGroupDetailTableViewController.m in Sources */,
+				696BE3771B31A700000AA54F /* KFACeo.m in Sources */,
+				696BE3651B318F8F000AA54F /* KFACoreDataModel.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		696BE34F1B318EED000AA54F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				696BE35A1B318EED000AA54F /* KFACoreDataExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		696BE3551B318EED000AA54F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 696BE3391B318EED000AA54F /* KFACoreDataExample */;
+			targetProxy = 696BE3541B318EED000AA54F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		696BE3471B318EED000AA54F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				696BE3481B318EED000AA54F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		696BE34C1B318EED000AA54F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				696BE34D1B318EED000AA54F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		696BE35B1B318EED000AA54F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		696BE35C1B318EED000AA54F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		696BE35E1B318EED000AA54F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KFACoreDataExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		696BE35F1B318EED000AA54F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KFACoreDataExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		696BE3611B318EED000AA54F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KFACoreDataExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KFACoreDataExample.app/KFACoreDataExample";
+			};
+			name = Debug;
+		};
+		696BE3621B318EED000AA54F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KFACoreDataExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KFACoreDataExample.app/KFACoreDataExample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		696BE3351B318EED000AA54F /* Build configuration list for PBXProject "KFACoreDataExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				696BE35B1B318EED000AA54F /* Debug */,
+				696BE35C1B318EED000AA54F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		696BE35D1B318EED000AA54F /* Build configuration list for PBXNativeTarget "KFACoreDataExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				696BE35E1B318EED000AA54F /* Debug */,
+				696BE35F1B318EED000AA54F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		696BE3601B318EED000AA54F /* Build configuration list for PBXNativeTarget "KFACoreDataExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				696BE3611B318EED000AA54F /* Debug */,
+				696BE3621B318EED000AA54F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		696BE3631B318F8F000AA54F /* KFACoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				696BE3641B318F8F000AA54F /* KFACoreDataModel.xcdatamodel */,
+			);
+			currentVersion = 696BE3641B318F8F000AA54F /* KFACoreDataModel.xcdatamodel */;
+			path = KFACoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 696BE3321B318EED000AA54F /* Project object */;
+}
