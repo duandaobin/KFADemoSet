@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40g-BO-dJ4">
+                                <rect key="frame" x="100" y="120" width="400" height="40"/>
+                                <color key="backgroundColor" red="0.24183702139999999" green="0.94084006019999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="tlH-JG-mVV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pba-wy-1iz">
+                                <rect key="frame" x="150" y="210" width="300" height="50"/>
+                                <color key="backgroundColor" red="0.82352941180000006" green="0.82352941180000006" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="N0W-Wx-tc0"/>
+                                </constraints>
+                                <state key="normal" title="切换语言">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeLanguage:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Lbc-kB-Pjz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="40g-BO-dJ4" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="100" id="8c1-Js-7Z4"/>
+                            <constraint firstItem="Pba-wy-1iz" firstAttribute="top" secondItem="40g-BO-dJ4" secondAttribute="bottom" constant="50" id="RMy-ED-Rpp"/>
+                            <constraint firstAttribute="trailing" secondItem="Pba-wy-1iz" secondAttribute="trailing" constant="150" id="XwF-NJ-XUu"/>
+                            <constraint firstItem="Pba-wy-1iz" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="150" id="aB9-Xy-D9h"/>
+                            <constraint firstAttribute="trailing" secondItem="40g-BO-dJ4" secondAttribute="trailing" constant="100" id="tpc-rI-DlM"/>
+                            <constraint firstItem="40g-BO-dJ4" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="100" id="xcP-bJ-nub"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="titleName" destination="40g-BO-dJ4" id="T3L-Tr-l8B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
