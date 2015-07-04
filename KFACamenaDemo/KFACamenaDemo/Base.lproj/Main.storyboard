@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n5O-m6-Mm2">
+                                <rect key="frame" x="50" y="100" width="500" height="300"/>
+                                <color key="backgroundColor" red="0.24183702139999999" green="0.94084006019999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="sAS-Nb-FgM"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VxA-ya-AYU">
+                                <rect key="frame" x="250" y="452" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.24183702139999999" green="0.94084006019999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="LcD-Xq-U03"/>
+                                    <constraint firstAttribute="width" constant="100" id="OcZ-4y-Jsd"/>
+                                </constraints>
+                                <state key="normal" title="拍照">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="takePhotos:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="XJl-yG-vPg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ip0-gI-Tm8">
+                                <rect key="frame" x="250" y="502" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.24183702139999999" green="0.94084006019999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="摄像">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="takePhotoGraph:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="B3b-Bl-153"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99r-ao-KFV">
+                                <rect key="frame" x="400" y="502" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.24183702139999999" green="0.94084006019999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="柯梵相机">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flashLight:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DVm-IN-mhI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ryj-qT-1kf">
+                                <rect key="frame" x="100" y="502" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.24183702139999999" green="0.94084006019999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="照片">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="fetchPicture:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="xI9-g3-tcK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ip0-gI-Tm8" firstAttribute="leading" secondItem="ryj-qT-1kf" secondAttribute="trailing" constant="50" id="0QT-Hv-OQN"/>
+                            <constraint firstItem="99r-ao-KFV" firstAttribute="top" secondItem="Ip0-gI-Tm8" secondAttribute="top" id="2S9-SW-bZl"/>
+                            <constraint firstItem="99r-ao-KFV" firstAttribute="width" secondItem="VxA-ya-AYU" secondAttribute="width" id="3ID-d2-8jk"/>
+                            <constraint firstAttribute="trailing" secondItem="n5O-m6-Mm2" secondAttribute="trailing" constant="50" id="6GL-EI-zFS"/>
+                            <constraint firstItem="99r-ao-KFV" firstAttribute="width" secondItem="ryj-qT-1kf" secondAttribute="width" id="8vb-zW-mKV"/>
+                            <constraint firstItem="99r-ao-KFV" firstAttribute="height" secondItem="ryj-qT-1kf" secondAttribute="height" id="BCA-R2-h2u"/>
+                            <constraint firstAttribute="centerX" secondItem="VxA-ya-AYU" secondAttribute="centerX" id="CGi-75-VaT"/>
+                            <constraint firstItem="99r-ao-KFV" firstAttribute="leading" secondItem="Ip0-gI-Tm8" secondAttribute="trailing" constant="50" id="D2w-Nd-LYz"/>
+                            <constraint firstItem="Ip0-gI-Tm8" firstAttribute="top" secondItem="VxA-ya-AYU" secondAttribute="bottom" constant="20" id="IV5-SM-DDT"/>
+                            <constraint firstItem="n5O-m6-Mm2" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="50" id="JI2-Bz-PYX"/>
+                            <constraint firstItem="Ip0-gI-Tm8" firstAttribute="leading" secondItem="VxA-ya-AYU" secondAttribute="leading" id="OFq-gI-QYN"/>
+                            <constraint firstItem="99r-ao-KFV" firstAttribute="height" secondItem="VxA-ya-AYU" secondAttribute="height" id="Xny-sk-zre"/>
+                            <constraint firstItem="99r-ao-KFV" firstAttribute="top" secondItem="ryj-qT-1kf" secondAttribute="top" id="h8Z-8N-Srt"/>
+                            <constraint firstItem="VxA-ya-AYU" firstAttribute="top" secondItem="n5O-m6-Mm2" secondAttribute="bottom" constant="52" id="nbK-w1-nht"/>
+                            <constraint firstItem="99r-ao-KFV" firstAttribute="width" secondItem="Ip0-gI-Tm8" secondAttribute="width" id="op1-Rf-Iis"/>
+                            <constraint firstItem="99r-ao-KFV" firstAttribute="height" secondItem="Ip0-gI-Tm8" secondAttribute="height" id="wYv-4A-dIT"/>
+                            <constraint firstItem="n5O-m6-Mm2" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="100" id="zTv-uh-3jQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="displayPicture" destination="n5O-m6-Mm2" id="P2I-tX-d1G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="303" y="485"/>
+        </scene>
+    </scenes>
+</document>
