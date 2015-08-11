@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入电话号码" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="NzW-ct-jef">
+                                <rect key="frame" x="210" y="120" width="180" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3sW-Zm-uf6"/>
+                                    <constraint firstAttribute="width" constant="180" id="x56-mP-L6n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vPk-BP-l2k">
+                                <rect key="frame" x="210" y="180" width="180" height="30"/>
+                                <color key="backgroundColor" red="0.96862745100000003" green="0.59552850209999997" blue="0.0363253381" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="r1j-d0-YBQ"/>
+                                    <constraint firstAttribute="height" constant="30" id="u9J-Uz-Pt2"/>
+                                </constraints>
+                                <state key="normal" title="拨打电话">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="call:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R4v-pO-7Hz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beG-yD-m3W">
+                                <rect key="frame" x="210" y="240" width="180" height="30"/>
+                                <color key="backgroundColor" red="0.44848456489999999" green="0.79806385869999996" blue="0.47713009379999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="XX0-XC-O8S"/>
+                                    <constraint firstAttribute="width" constant="180" id="kGZ-fJ-BPi"/>
+                                </constraints>
+                                <state key="normal" title="通话记录">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="callMenu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jhY-aD-g9t"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vPk-BP-l2k" firstAttribute="top" secondItem="NzW-ct-jef" secondAttribute="bottom" constant="30" id="7CE-m4-kKm"/>
+                            <constraint firstItem="beG-yD-m3W" firstAttribute="top" secondItem="vPk-BP-l2k" secondAttribute="bottom" constant="30" id="AHi-Mx-uw6"/>
+                            <constraint firstAttribute="centerX" secondItem="beG-yD-m3W" secondAttribute="centerX" id="UXi-dN-kBH"/>
+                            <constraint firstAttribute="centerX" secondItem="NzW-ct-jef" secondAttribute="centerX" id="bMh-Lx-F8H"/>
+                            <constraint firstItem="NzW-ct-jef" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="qr8-vG-vAm"/>
+                            <constraint firstAttribute="centerX" secondItem="vPk-BP-l2k" secondAttribute="centerX" id="uqd-vO-EvR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="phoneNumber" destination="NzW-ct-jef" id="OKM-j6-wD0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
