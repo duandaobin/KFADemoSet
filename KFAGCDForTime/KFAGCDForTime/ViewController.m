@@ -36,15 +36,17 @@
             dispatch_source_cancel(timer);
             // 回到主线程执行动作
             dispatch_async(dispatch_get_main_queue(), ^{
-                [weakSelf.btn setTitle:@"发送验证码" forState:UIControlStateNormal];
-                weakSelf.btn.userInteractionEnabled = YES;
+                __strong typeof(weakSelf)strongSelf  = weakSelf;
+                [strongSelf.btn setTitle:@"发送验证码" forState:UIControlStateNormal];
+                strongSelf.btn.userInteractionEnabled = YES;
             });
         }else {
             int seconds = timeout % 60;
             NSString *timeStr = [NSString stringWithFormat:@"%.2d",seconds];
             dispatch_async(dispatch_get_main_queue(), ^{
-                [weakSelf.btn setTitle:[NSString stringWithFormat:@"%@秒后重新发送",timeStr] forState:UIControlStateNormal];
-                weakSelf.btn.userInteractionEnabled = NO;
+                __strong typeof(weakSelf)strongSelf = weakSelf;
+                [strongSelf.btn setTitle:[NSString stringWithFormat:@"%@秒后重新发送",timeStr] forState:UIControlStateNormal];
+                strongSelf.btn.userInteractionEnabled = NO;
             });
             timeout--;
         }
