@@ -25,6 +25,7 @@
 
 // 开始倒计时
 - (IBAction)calculateTime:(id)sender {
+    // 这个时间可以根据情况随便设置
     __block int timeout = 59; // 设置倒计时时间
     __weak typeof(self)weakSelf = self;
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
