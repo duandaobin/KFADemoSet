@@ -25,8 +25,10 @@
 
 // 开始倒计时
 - (IBAction)calculateTime:(id)sender {
+    
+    [self.text resignFirstResponder];
     // 这个时间可以根据情况随便设置
-    __block int timeout = 59; // 设置倒计时时间
+    __block int timeout = 9; // 设置倒计时时间
     __weak typeof(self)weakSelf = self;
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     dispatch_source_t timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue);
@@ -38,7 +40,7 @@
             // 回到主线程执行动作
             dispatch_async(dispatch_get_main_queue(), ^{
                 __strong typeof(weakSelf)strongSelf  = weakSelf;
-                [strongSelf.btn setTitle:@"发送验证码" forState:UIControlStateNormal];
+                [strongSelf.btn setTitle:@"请重新发送验证码" forState:UIControlStateNormal];
                 strongSelf.btn.userInteractionEnabled = YES;
             });
         }else {

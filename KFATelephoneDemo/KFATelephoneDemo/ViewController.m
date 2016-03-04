@@ -9,6 +9,9 @@
 #import "ViewController.h"
 #import <CoreTelephony/CTCall.h>
 #import <CoreTelephony/CTCallCenter.h>
+#import <CoreTelephony/CTCarrier.h>
+#import <CoreTelephony/CTSubscriber.h>
+#import <CoreTelephony/CTTelephonyNetworkInfo.h>
 #import <sqlite3.h>
 
 @interface ViewController ()
