@@ -11,7 +11,7 @@ This method often used for SMS verification or similar situation. Such as the fo
 
 ### [KFAGraphDemo](https://github.com/KFAaron/KFADemoSet/tree/master/KFAGraphDemo)
 This a simple demo for display a graph. Look at the following image:
-![](https://github.com/KFAaron/KFADemoSet/raw/master/gifPicture/graph.png)
+![](https://github.com/KFAaron/KFADemoSet/raw/master/gifPicture/graph.png=378x666)
 
 # more
 If you have a good demo, just upload it!
