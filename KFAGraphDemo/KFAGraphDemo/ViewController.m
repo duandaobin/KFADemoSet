@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "KFAGraphView.h"
+#import "KFACustomView.h"
 
 @interface ViewController ()
 
@@ -20,10 +21,8 @@
 - (void)loadView {
     [super loadView];
     
-    KFAGraphView *graphView = [[KFAGraphView alloc] initWithFrame:CGRectMake(0, 100, kScreenWidth, 332.5)];
-    graphView.backgroundColor = [UIColor clearColor];
-    graphView.dataArr = self.graphAarr;
-    [self.view addSubview:graphView];
+//    [self addGraphView];
+    [self addCustomView];
 }
 
 - (void)viewDidLoad {
@@ -34,6 +33,20 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)addCustomView {
+    KFACustomView *customView = [[KFACustomView alloc] initWithFrame:self.view.bounds];
+    customView.backgroundColor = [UIColor lightGrayColor];
+    customView.type = KFACustomTypeCut;
+    [self.view addSubview:customView];
+}
+
+- (void)addGraphView {
+    KFAGraphView *graphView = [[KFAGraphView alloc] initWithFrame:CGRectMake(0, 100, kScreenWidth, 332.5)];
+    graphView.backgroundColor = [UIColor orangeColor];
+    graphView.dataArr = self.graphAarr;
+    [self.view addSubview:graphView];
 }
 
 - (NSArray *)graphAarr {

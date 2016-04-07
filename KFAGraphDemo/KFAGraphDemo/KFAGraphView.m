@@ -115,7 +115,7 @@
         CGContextStrokePath(context);
     }
     
-    // 原点
+    // 圆点
     {
         CGContextRef contextPoint = UIGraphicsGetCurrentContext();
         CGPoint point;

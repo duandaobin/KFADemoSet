@@ -16,6 +16,8 @@
 		69B057E81CB4EAF000D5A414 /* KFAGraphDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 69B057E71CB4EAF000D5A414 /* KFAGraphDemoTests.m */; };
 		69B057F41CB4EBF100D5A414 /* KFAGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69B057F31CB4EBF100D5A414 /* KFAGraphView.m */; };
 		69B057F71CB4FC4200D5A414 /* UIColor+KFAAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 69B057F61CB4FC4200D5A414 /* UIColor+KFAAdditions.m */; };
+		69B057FC1CB63F5500D5A414 /* KFACustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69B057FB1CB63F5500D5A414 /* KFACustomView.m */; };
+		69B057FE1CB64FC800D5A414 /* 1234.png in Resources */ = {isa = PBXBuildFile; fileRef = 69B057FD1CB64FC800D5A414 /* 1234.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,9 @@
 		69B057F31CB4EBF100D5A414 /* KFAGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFAGraphView.m; sourceTree = "<group>"; };
 		69B057F51CB4FC4200D5A414 /* UIColor+KFAAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+KFAAdditions.h"; sourceTree = "<group>"; };
 		69B057F61CB4FC4200D5A414 /* UIColor+KFAAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+KFAAdditions.m"; sourceTree = "<group>"; };
+		69B057FA1CB63F5500D5A414 /* KFACustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFACustomView.h; sourceTree = "<group>"; };
+		69B057FB1CB63F5500D5A414 /* KFACustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFACustomView.m; sourceTree = "<group>"; };
+		69B057FD1CB64FC800D5A414 /* 1234.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1234.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,8 +98,11 @@
 				69B057D41CB4EAF000D5A414 /* ViewController.m */,
 				69B057F21CB4EBF100D5A414 /* KFAGraphView.h */,
 				69B057F31CB4EBF100D5A414 /* KFAGraphView.m */,
+				69B057FA1CB63F5500D5A414 /* KFACustomView.h */,
+				69B057FB1CB63F5500D5A414 /* KFACustomView.m */,
 				69B057D61CB4EAF000D5A414 /* Main.storyboard */,
 				69B057D91CB4EAF000D5A414 /* Assets.xcassets */,
+				69B057FD1CB64FC800D5A414 /* 1234.png */,
 				69B057DB1CB4EAF000D5A414 /* LaunchScreen.storyboard */,
 				69B057DE1CB4EAF000D5A414 /* Info.plist */,
 				69B057CD1CB4EAF000D5A414 /* Supporting Files */,
@@ -202,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				69B057DD1CB4EAF000D5A414 /* LaunchScreen.storyboard in Resources */,
+				69B057FE1CB64FC800D5A414 /* 1234.png in Resources */,
 				69B057DA1CB4EAF000D5A414 /* Assets.xcassets in Resources */,
 				69B057D81CB4EAF000D5A414 /* Main.storyboard in Resources */,
 			);
@@ -223,6 +232,7 @@
 			files = (
 				69B057F41CB4EBF100D5A414 /* KFAGraphView.m in Sources */,
 				69B057D51CB4EAF000D5A414 /* ViewController.m in Sources */,
+				69B057FC1CB63F5500D5A414 /* KFACustomView.m in Sources */,
 				69B057D21CB4EAF000D5A414 /* AppDelegate.m in Sources */,
 				69B057CF1CB4EAF000D5A414 /* main.m in Sources */,
 				69B057F71CB4FC4200D5A414 /* UIColor+KFAAdditions.m in Sources */,
@@ -412,6 +422,7 @@
 				69B057EE1CB4EAF000D5A414 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		69B057EF1CB4EAF000D5A414 /* Build configuration list for PBXNativeTarget "KFAGraphDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +431,7 @@
 				69B057F11CB4EAF000D5A414 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
