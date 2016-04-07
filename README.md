@@ -14,5 +14,7 @@ This a simple demo for display a graph. Look at the following image:
 
 <img src="https://github.com/KFAaron/KFADemoSet/raw/master/gifPicture/graph.png" width="189" height="333"/>
 
+MeanWhile, it shows how to use Quartz2D to draw solid line、 dotted line、shape、circle、text、image、and so on.
+
 # more
 If you have a good demo, just upload it!
