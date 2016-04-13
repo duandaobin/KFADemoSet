@@ -1,0 +1,16 @@
+//
+//  KFACoreAnimationDemo.pch
+//  KFACoreAnimationDemo
+//
+//  Created by 柯梵Aaron on 16/4/13.
+//  Copyright © 2016年 柯梵Aaron. All rights reserved.
+//
+
+#ifndef KFACoreAnimationDemo_pch
+#define KFACoreAnimationDemo_pch
+
+// 尺寸
+#define kScreenWidth [[UIScreen mainScreen] bounds].size.width
+#define kScreenHeight [[UIScreen mainScreen] bounds].size.height
+
+#endif /* KFACoreAnimationDemo_pch */
