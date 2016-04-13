@@ -16,5 +16,8 @@ This a simple demo for display a graph. Look at the following image:
 
 MeanWhile, it shows how to use Quartz2D to draw solid line、 dotted line、shape、circle、text、image、and so on.
 
+### [KFACoreAnimationDemo](https://github.com/KFAaron/KFADemoSet/tree/master/KFACoreAnimationDemo)
+This demo shows how to use the APIs of Core Animation.
+
 # more
 If you have a good demo, just upload it!
