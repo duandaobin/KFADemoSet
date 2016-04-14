@@ -7,7 +7,6 @@
 //
 
 #import "KFAGraphView.h"
-#import "UIColor+KFAAdditions.h"
 
 #define kPointNumber 7 // 最多7个点
 #define kGraphHeight 150.0 // 图表高度

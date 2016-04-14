@@ -17,6 +17,8 @@
 @property (weak, nonatomic) IBOutlet UIView *leftDownView;
 @property (weak, nonatomic) IBOutlet UIView *rightDownView;
 
+@property (nonatomic, weak) CALayer *blueLayer;
+
 @end
 
 @implementation ViewController
@@ -28,6 +30,43 @@
     [self setLayerViewBackgroudImage];
     [self seperateImageToFourView];
     [self addAnotherBlueLayer];
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+    // 通过识别在图层上的点击位置，判断点击的图层，从而实现相应的相应
+    CGPoint point = [[touches anyObject] locationInView:self.view];
+    
+    // 第一种方法 containsPoint:
+//    point = [self.layerView.layer convertPoint:point fromLayer:self.view.layer];
+//    if ([self.layerView.layer containsPoint:point]) {
+//        point = [self.blueLayer convertPoint:point fromLayer:self.layerView.layer];
+//        if ([self.blueLayer containsPoint:point]) {
+//            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Inside blue layer" message:nil preferredStyle:UIAlertControllerStyleAlert];
+//            UIAlertAction *action = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil];
+//            [alert addAction:action];
+//            [self presentViewController:alert animated:YES completion:nil];
+//        }else {
+//            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Inside white layer" message:nil preferredStyle:UIAlertControllerStyleAlert];
+//            UIAlertAction *action = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil];
+//            [alert addAction:action];
+//            [self presentViewController:alert animated:YES completion:nil];
+//        }
+//    }
+    
+    // 第二种方法 hitTest:
+    CALayer *layer = [self.layerView.layer hitTest:point];
+    if (layer == self.blueLayer) {
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Inside blue layer" message:nil preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *action = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil];
+        [alert addAction:action];
+        [self presentViewController:alert animated:YES completion:nil];
+    }else if (layer == self.layerView.layer) {
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Inside white layer" message:nil preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *action = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil];
+        [alert addAction:action];
+        [self presentViewController:alert animated:YES completion:nil];
+    }
 }
 
 #pragma mark -
@@ -42,7 +81,8 @@
 #pragma mark -
 #pragma mark method
 
-- (void)goToAnchorPointTestView:(id)sender {
+- (IBAction)goToAhchorPointView:(id)sender {
+    
     KFAAnchorPointTestViewController *anchorPointTestVC = [[KFAAnchorPointTestViewController alloc] init];
     [self.navigationController pushViewController:anchorPointTestVC animated:YES];
 }
@@ -55,9 +95,10 @@
     // 设置代理
     blueLayer.delegate = self;
     blueLayer.contentsScale = [UIScreen mainScreen].scale;
-    [self.layerView.layer addSublayer:blueLayer];
+    self.blueLayer = blueLayer;
+    [self.layerView.layer addSublayer:self.blueLayer];
     // 强制重绘 以便调动代理方法, 不同于UIView，图层显示在屏幕上时，CALayer不会自动重绘它的内容
-    [blueLayer display];
+    [self.blueLayer display];
 }
 
 - (void)addImage:(UIImage *)image withRect:(CGRect)rect toLayer:(CALayer *)layer {
@@ -104,9 +145,6 @@
 
 // 给图层添加一个子图层
 - (void)addBlueLayer {
-    
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(goToAnchorPointTestView:)];
-    [self.layerView addGestureRecognizer:tap];
     
     CALayer *blueLayer = [CALayer layer];
     blueLayer.frame = CGRectMake(190.0f, 190.0f, 10.0f, 10.0f);

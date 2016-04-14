@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69114F0D1CBFB72300142B32 /* KFADrawToolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69114F0C1CBFB72300142B32 /* KFADrawToolView.m */; };
+		69114F121CBFC56D00142B32 /* NSArray+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 69114F111CBFC56D00142B32 /* NSArray+Additions.m */; };
+		69114F151CBFC64D00142B32 /* KFADrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69114F141CBFC64D00142B32 /* KFADrawView.m */; };
+		69114F181CBFC83A00142B32 /* KFAPathModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 69114F171CBFC83A00142B32 /* KFAPathModel.m */; };
+		69114F1B1CBFCDD800142B32 /* KFADrawBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69114F1A1CBFCDD800142B32 /* KFADrawBoardViewController.m */; };
 		69B057CF1CB4EAF000D5A414 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69B057CE1CB4EAF000D5A414 /* main.m */; };
 		69B057D21CB4EAF000D5A414 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69B057D11CB4EAF000D5A414 /* AppDelegate.m */; };
 		69B057D51CB4EAF000D5A414 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69B057D41CB4EAF000D5A414 /* ViewController.m */; };
@@ -31,6 +36,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		69114F0B1CBFB72300142B32 /* KFADrawToolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFADrawToolView.h; sourceTree = "<group>"; };
+		69114F0C1CBFB72300142B32 /* KFADrawToolView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFADrawToolView.m; sourceTree = "<group>"; };
+		69114F0E1CBFB77800142B32 /* KFAGraphDemo.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFAGraphDemo.pch; sourceTree = "<group>"; };
+		69114F0F1CBFB7FC00142B32 /* KFADefineConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFADefineConstant.h; sourceTree = "<group>"; };
+		69114F101CBFC56D00142B32 /* NSArray+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Additions.h"; sourceTree = "<group>"; };
+		69114F111CBFC56D00142B32 /* NSArray+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Additions.m"; sourceTree = "<group>"; };
+		69114F131CBFC64D00142B32 /* KFADrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFADrawView.h; sourceTree = "<group>"; };
+		69114F141CBFC64D00142B32 /* KFADrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFADrawView.m; sourceTree = "<group>"; };
+		69114F161CBFC83A00142B32 /* KFAPathModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFAPathModel.h; sourceTree = "<group>"; };
+		69114F171CBFC83A00142B32 /* KFAPathModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFAPathModel.m; sourceTree = "<group>"; };
+		69114F191CBFCDD800142B32 /* KFADrawBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFADrawBoardViewController.h; sourceTree = "<group>"; };
+		69114F1A1CBFCDD800142B32 /* KFADrawBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFADrawBoardViewController.m; sourceTree = "<group>"; };
 		69B057CA1CB4EAF000D5A414 /* KFAGraphDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KFAGraphDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69B057CE1CB4EAF000D5A414 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		69B057D01CB4EAF000D5A414 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -71,6 +88,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		69114F0A1CBFB6E300142B32 /* drawingBoard */ = {
+			isa = PBXGroup;
+			children = (
+				69114F191CBFCDD800142B32 /* KFADrawBoardViewController.h */,
+				69114F1A1CBFCDD800142B32 /* KFADrawBoardViewController.m */,
+				69114F0B1CBFB72300142B32 /* KFADrawToolView.h */,
+				69114F0C1CBFB72300142B32 /* KFADrawToolView.m */,
+				69114F131CBFC64D00142B32 /* KFADrawView.h */,
+				69114F141CBFC64D00142B32 /* KFADrawView.m */,
+				69114F161CBFC83A00142B32 /* KFAPathModel.h */,
+				69114F171CBFC83A00142B32 /* KFAPathModel.m */,
+			);
+			name = drawingBoard;
+			sourceTree = "<group>";
+		};
 		69B057C11CB4EAF000D5A414 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +124,7 @@
 		69B057CC1CB4EAF000D5A414 /* KFAGraphDemo */ = {
 			isa = PBXGroup;
 			children = (
+				69114F0A1CBFB6E300142B32 /* drawingBoard */,
 				69B057D01CB4EAF000D5A414 /* AppDelegate.h */,
 				69B057D11CB4EAF000D5A414 /* AppDelegate.m */,
 				69B057D31CB4EAF000D5A414 /* ViewController.h */,
@@ -108,6 +141,9 @@
 				69B057CD1CB4EAF000D5A414 /* Supporting Files */,
 				69B057F51CB4FC4200D5A414 /* UIColor+KFAAdditions.h */,
 				69B057F61CB4FC4200D5A414 /* UIColor+KFAAdditions.m */,
+				69114F101CBFC56D00142B32 /* NSArray+Additions.h */,
+				69114F111CBFC56D00142B32 /* NSArray+Additions.m */,
+				69114F0F1CBFB7FC00142B32 /* KFADefineConstant.h */,
 			);
 			path = KFAGraphDemo;
 			sourceTree = "<group>";
@@ -115,6 +151,7 @@
 		69B057CD1CB4EAF000D5A414 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				69114F0E1CBFB77800142B32 /* KFAGraphDemo.pch */,
 				69B057CE1CB4EAF000D5A414 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -230,11 +267,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69114F151CBFC64D00142B32 /* KFADrawView.m in Sources */,
+				69114F121CBFC56D00142B32 /* NSArray+Additions.m in Sources */,
 				69B057F41CB4EBF100D5A414 /* KFAGraphView.m in Sources */,
 				69B057D51CB4EAF000D5A414 /* ViewController.m in Sources */,
 				69B057FC1CB63F5500D5A414 /* KFACustomView.m in Sources */,
+				69114F1B1CBFCDD800142B32 /* KFADrawBoardViewController.m in Sources */,
+				69114F181CBFC83A00142B32 /* KFAPathModel.m in Sources */,
 				69B057D21CB4EAF000D5A414 /* AppDelegate.m in Sources */,
 				69B057CF1CB4EAF000D5A414 /* main.m in Sources */,
+				69114F0D1CBFB72300142B32 /* KFADrawToolView.m in Sources */,
 				69B057F71CB4FC4200D5A414 /* UIColor+KFAAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,6 +403,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/KFAGraphDemo/KFAGraphDemo.pch";
 				INFOPLIST_FILE = KFAGraphDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kefanAaron.KFAGraphDemo;
@@ -372,6 +416,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/KFAGraphDemo/KFAGraphDemo.pch";
 				INFOPLIST_FILE = KFAGraphDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kefanAaron.KFAGraphDemo;

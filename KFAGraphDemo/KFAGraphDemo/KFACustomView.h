@@ -14,6 +14,7 @@ typedef NS_ENUM(NSInteger, KFACustomType) {
     KFACustomTypeCircle, // 圆
     KFACustomTypeTextImage, // 文字图片
     KFACustomTypeCut, // 裁剪
+    KFACustomTypeGraduatedColors, // 颜色渐变
     KFACustomTypeOther // 其他
 };
 

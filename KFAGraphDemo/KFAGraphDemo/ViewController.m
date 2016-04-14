@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "KFAGraphView.h"
 #import "KFACustomView.h"
+#import "KFADrawBoardViewController.h"
 
 @interface ViewController ()
 
@@ -23,6 +24,7 @@
     
 //    [self addGraphView];
     [self addCustomView];
+    [self addButtons];
 }
 
 - (void)viewDidLoad {
@@ -35,10 +37,27 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)addButtons {
+    UIButton *drawingBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    drawingBtn.frame = CGRectMake((kScreenWidth-150)/2, 50+64, 150, 40);
+    [drawingBtn setTitle:@"去涂鸦" forState:UIControlStateNormal];
+    drawingBtn.backgroundColor = [UIColor cyanColor];
+    [drawingBtn setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    drawingBtn.layer.cornerRadius = 5;
+    drawingBtn.layer.masksToBounds = YES;
+    [drawingBtn addTarget:self action:@selector(gotoDrawBoard) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:drawingBtn];
+}
+
+- (void)gotoDrawBoard {
+    KFADrawBoardViewController *drawBoardVC = [[KFADrawBoardViewController alloc] init];
+    [self.navigationController pushViewController:drawBoardVC animated:YES];
+}
+
 - (void)addCustomView {
     KFACustomView *customView = [[KFACustomView alloc] initWithFrame:self.view.bounds];
     customView.backgroundColor = [UIColor lightGrayColor];
-    customView.type = KFACustomTypeCut;
+    customView.type = KFACustomTypeGraduatedColors;
     [self.view addSubview:customView];
 }
 

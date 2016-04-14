@@ -12,7 +12,8 @@ This method often used for SMS verification or similar situation. Such as the fo
 ### [KFAGraphDemo](https://github.com/KFAaron/KFADemoSet/tree/master/KFAGraphDemo)
 This a simple demo for display a graph. Look at the following image:
 
-<img src="https://github.com/KFAaron/KFADemoSet/raw/master/gifPicture/graph.png" width="189" height="333"/>
+<img src="https://github.com/KFAaron/KFADemoSet/raw/master/gifPicture/graph.png" width="200" height="356"/>
+<img src="https://github.com/KFAaron/KFADemoSet/raw/master/gifPicture/drawBoard.gif" width="200" height="356"/>
 
 MeanWhile, it shows how to use Quartz2D to draw solid line、 dotted line、shape、circle、text、image、and so on.
 

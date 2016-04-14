@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-#define kScreenWidth  [[UIScreen mainScreen] bounds].size.width
-
 @interface KFAGraphView : UIView
 
 @property (nonatomic, copy) NSArray *dataArr;
