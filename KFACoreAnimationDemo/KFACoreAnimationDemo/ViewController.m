@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "KFAAnchorPointTestViewController.h"
 
 @interface ViewController ()
 
@@ -40,6 +41,11 @@
 
 #pragma mark -
 #pragma mark method
+
+- (void)goToAnchorPointTestView:(id)sender {
+    KFAAnchorPointTestViewController *anchorPointTestVC = [[KFAAnchorPointTestViewController alloc] init];
+    [self.navigationController pushViewController:anchorPointTestVC animated:YES];
+}
 
 // 自定义绘画
 - (void)addAnotherBlueLayer {
@@ -98,6 +104,10 @@
 
 // 给图层添加一个子图层
 - (void)addBlueLayer {
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(goToAnchorPointTestView:)];
+    [self.layerView addGestureRecognizer:tap];
+    
     CALayer *blueLayer = [CALayer layer];
     blueLayer.frame = CGRectMake(190.0f, 190.0f, 10.0f, 10.0f);
     blueLayer.backgroundColor = [UIColor blueColor].CGColor;

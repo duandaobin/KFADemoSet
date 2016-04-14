@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69114F041CBF6BBD00142B32 /* KFAAnchorPointTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69114F021CBF6BBD00142B32 /* KFAAnchorPointTestViewController.m */; };
+		69114F051CBF6BBD00142B32 /* KFAAnchorPointTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69114F031CBF6BBD00142B32 /* KFAAnchorPointTestViewController.xib */; };
+		69114F081CBF775B00142B32 /* NSTimer+KFAWeakUsing.m in Sources */ = {isa = PBXBuildFile; fileRef = 69114F071CBF775B00142B32 /* NSTimer+KFAWeakUsing.m */; };
 		695B03B91CBE707D00C29C29 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 695B03B81CBE707D00C29C29 /* main.m */; };
 		695B03BC1CBE707D00C29C29 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 695B03BB1CBE707D00C29C29 /* AppDelegate.m */; };
 		695B03BF1CBE707D00C29C29 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 695B03BE1CBE707D00C29C29 /* ViewController.m */; };
@@ -15,6 +18,10 @@
 		695B03C71CBE707D00C29C29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 695B03C51CBE707D00C29C29 /* LaunchScreen.storyboard */; };
 		695B03D21CBE707E00C29C29 /* KFACoreAnimationDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 695B03D11CBE707E00C29C29 /* KFACoreAnimationDemoTests.m */; };
 		695B03DF1CBE772C00C29C29 /* animationPic.png in Resources */ = {isa = PBXBuildFile; fileRef = 695B03DE1CBE772C00C29C29 /* animationPic.png */; };
+		695B03E41CBF485E00C29C29 /* dial.png in Resources */ = {isa = PBXBuildFile; fileRef = 695B03E01CBF485E00C29C29 /* dial.png */; };
+		695B03E51CBF485E00C29C29 /* hourHand.png in Resources */ = {isa = PBXBuildFile; fileRef = 695B03E11CBF485E00C29C29 /* hourHand.png */; };
+		695B03E61CBF485E00C29C29 /* minuteHand.png in Resources */ = {isa = PBXBuildFile; fileRef = 695B03E21CBF485E00C29C29 /* minuteHand.png */; };
+		695B03E71CBF485E00C29C29 /* secondHand.png in Resources */ = {isa = PBXBuildFile; fileRef = 695B03E31CBF485E00C29C29 /* secondHand.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +35,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		69114F011CBF6BBD00142B32 /* KFAAnchorPointTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFAAnchorPointTestViewController.h; sourceTree = "<group>"; };
+		69114F021CBF6BBD00142B32 /* KFAAnchorPointTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFAAnchorPointTestViewController.m; sourceTree = "<group>"; };
+		69114F031CBF6BBD00142B32 /* KFAAnchorPointTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KFAAnchorPointTestViewController.xib; sourceTree = "<group>"; };
+		69114F061CBF775B00142B32 /* NSTimer+KFAWeakUsing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+KFAWeakUsing.h"; sourceTree = "<group>"; };
+		69114F071CBF775B00142B32 /* NSTimer+KFAWeakUsing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+KFAWeakUsing.m"; sourceTree = "<group>"; };
+		69114F091CBF77B400142B32 /* KFADefineConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFADefineConstant.h; sourceTree = "<group>"; };
 		695B03B41CBE707D00C29C29 /* KFACoreAnimationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KFACoreAnimationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		695B03B81CBE707D00C29C29 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		695B03BA1CBE707D00C29C29 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -43,6 +56,10 @@
 		695B03D31CBE707E00C29C29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		695B03DC1CBE71B800C29C29 /* KFACoreAnimationDemo.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFACoreAnimationDemo.pch; sourceTree = "<group>"; };
 		695B03DE1CBE772C00C29C29 /* animationPic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animationPic.png; sourceTree = "<group>"; };
+		695B03E01CBF485E00C29C29 /* dial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dial.png; sourceTree = "<group>"; };
+		695B03E11CBF485E00C29C29 /* hourHand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hourHand.png; sourceTree = "<group>"; };
+		695B03E21CBF485E00C29C29 /* minuteHand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minuteHand.png; sourceTree = "<group>"; };
+		695B03E31CBF485E00C29C29 /* secondHand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = secondHand.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +111,12 @@
 				695B03C81CBE707D00C29C29 /* Info.plist */,
 				695B03B71CBE707D00C29C29 /* Supporting Files */,
 				695B03DD1CBE76D300C29C29 /* source */,
+				69114F011CBF6BBD00142B32 /* KFAAnchorPointTestViewController.h */,
+				69114F021CBF6BBD00142B32 /* KFAAnchorPointTestViewController.m */,
+				69114F031CBF6BBD00142B32 /* KFAAnchorPointTestViewController.xib */,
+				69114F091CBF77B400142B32 /* KFADefineConstant.h */,
+				69114F061CBF775B00142B32 /* NSTimer+KFAWeakUsing.h */,
+				69114F071CBF775B00142B32 /* NSTimer+KFAWeakUsing.m */,
 			);
 			path = KFACoreAnimationDemo;
 			sourceTree = "<group>";
@@ -120,6 +143,10 @@
 			isa = PBXGroup;
 			children = (
 				695B03DE1CBE772C00C29C29 /* animationPic.png */,
+				695B03E01CBF485E00C29C29 /* dial.png */,
+				695B03E11CBF485E00C29C29 /* hourHand.png */,
+				695B03E21CBF485E00C29C29 /* minuteHand.png */,
+				695B03E31CBF485E00C29C29 /* secondHand.png */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -204,10 +231,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				695B03E71CBF485E00C29C29 /* secondHand.png in Resources */,
 				695B03C71CBE707D00C29C29 /* LaunchScreen.storyboard in Resources */,
+				695B03E41CBF485E00C29C29 /* dial.png in Resources */,
+				69114F051CBF6BBD00142B32 /* KFAAnchorPointTestViewController.xib in Resources */,
+				695B03E51CBF485E00C29C29 /* hourHand.png in Resources */,
 				695B03C41CBE707D00C29C29 /* Assets.xcassets in Resources */,
 				695B03C21CBE707D00C29C29 /* Main.storyboard in Resources */,
 				695B03DF1CBE772C00C29C29 /* animationPic.png in Resources */,
+				695B03E61CBF485E00C29C29 /* minuteHand.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,8 +258,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				695B03BF1CBE707D00C29C29 /* ViewController.m in Sources */,
+				69114F081CBF775B00142B32 /* NSTimer+KFAWeakUsing.m in Sources */,
 				695B03BC1CBE707D00C29C29 /* AppDelegate.m in Sources */,
 				695B03B91CBE707D00C29C29 /* main.m in Sources */,
+				69114F041CBF6BBD00142B32 /* KFAAnchorPointTestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +452,7 @@
 				695B03D81CBE707E00C29C29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		695B03D91CBE707E00C29C29 /* Build configuration list for PBXNativeTarget "KFACoreAnimationDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +461,7 @@
 				695B03DB1CBE707E00C29C29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

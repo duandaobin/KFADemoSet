@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KFAAnchorPointTestViewController">
+            <connections>
+                <outlet property="hourImage" destination="tDi-BO-0wA" id="DCx-OK-iSt"/>
+                <outlet property="minuteImage" destination="WPZ-Se-IA5" id="kEr-Ws-A6l"/>
+                <outlet property="secondImage" destination="b02-Yg-1UO" id="dEP-Mh-5b7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dial.png" translatesAutoresizingMaskIntoConstraints="NO" id="kVe-Tt-lBA">
+                    <rect key="frame" x="180" y="180" width="240" height="240"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="App-9v-XEP"/>
+                        <constraint firstAttribute="height" constant="240" id="Hgj-5l-tvR"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hourHand.png" translatesAutoresizingMaskIntoConstraints="NO" id="tDi-BO-0wA">
+                    <rect key="frame" x="286" y="260" width="28" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="28" id="fWI-5L-cwQ"/>
+                        <constraint firstAttribute="height" constant="80" id="yxp-QA-FSR"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="minuteHand.png" translatesAutoresizingMaskIntoConstraints="NO" id="WPZ-Se-IA5">
+                    <rect key="frame" x="287" y="253" width="26" height="94"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="26" id="cYU-Kg-lX3"/>
+                        <constraint firstAttribute="height" constant="94" id="t47-sG-fcJ"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="secondHand.png" translatesAutoresizingMaskIntoConstraints="NO" id="b02-Yg-1UO">
+                    <rect key="frame" x="292" y="250" width="16" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="16" id="173-LO-xa0"/>
+                        <constraint firstAttribute="height" constant="100" id="SmT-qF-mR3"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="WPZ-Se-IA5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9G0-hd-9Ed"/>
+                <constraint firstItem="WPZ-Se-IA5" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="RLa-eo-R5R"/>
+                <constraint firstItem="tDi-BO-0wA" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Tc5-mN-oHw"/>
+                <constraint firstItem="kVe-Tt-lBA" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fUK-UQ-P4Q"/>
+                <constraint firstItem="b02-Yg-1UO" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="lBv-ZA-0k2"/>
+                <constraint firstItem="tDi-BO-0wA" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rot-Nc-TXV"/>
+                <constraint firstItem="b02-Yg-1UO" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vjN-vN-f8L"/>
+                <constraint firstItem="kVe-Tt-lBA" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="zMb-9x-Wvs"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="dial.png" width="480" height="480"/>
+        <image name="hourHand.png" width="56" height="160"/>
+        <image name="minuteHand.png" width="52" height="188"/>
+        <image name="secondHand.png" width="32" height="200"/>
+    </resources>
+</document>
