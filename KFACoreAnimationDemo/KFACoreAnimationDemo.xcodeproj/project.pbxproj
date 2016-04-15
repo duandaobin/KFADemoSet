@@ -10,6 +10,7 @@
 		69114F041CBF6BBD00142B32 /* KFAAnchorPointTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69114F021CBF6BBD00142B32 /* KFAAnchorPointTestViewController.m */; };
 		69114F051CBF6BBD00142B32 /* KFAAnchorPointTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69114F031CBF6BBD00142B32 /* KFAAnchorPointTestViewController.xib */; };
 		69114F081CBF775B00142B32 /* NSTimer+KFAWeakUsing.m in Sources */ = {isa = PBXBuildFile; fileRef = 69114F071CBF775B00142B32 /* NSTimer+KFAWeakUsing.m */; };
+		69114F1D1CC087EE00142B32 /* num.png in Resources */ = {isa = PBXBuildFile; fileRef = 69114F1C1CC087EE00142B32 /* num.png */; };
 		695B03B91CBE707D00C29C29 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 695B03B81CBE707D00C29C29 /* main.m */; };
 		695B03BC1CBE707D00C29C29 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 695B03BB1CBE707D00C29C29 /* AppDelegate.m */; };
 		695B03BF1CBE707D00C29C29 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 695B03BE1CBE707D00C29C29 /* ViewController.m */; };
@@ -41,6 +42,7 @@
 		69114F061CBF775B00142B32 /* NSTimer+KFAWeakUsing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+KFAWeakUsing.h"; sourceTree = "<group>"; };
 		69114F071CBF775B00142B32 /* NSTimer+KFAWeakUsing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+KFAWeakUsing.m"; sourceTree = "<group>"; };
 		69114F091CBF77B400142B32 /* KFADefineConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFADefineConstant.h; sourceTree = "<group>"; };
+		69114F1C1CC087EE00142B32 /* num.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = num.png; sourceTree = "<group>"; };
 		695B03B41CBE707D00C29C29 /* KFACoreAnimationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KFACoreAnimationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		695B03B81CBE707D00C29C29 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		695B03BA1CBE707D00C29C29 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 		695B03DD1CBE76D300C29C29 /* source */ = {
 			isa = PBXGroup;
 			children = (
+				69114F1C1CC087EE00142B32 /* num.png */,
 				695B03DE1CBE772C00C29C29 /* animationPic.png */,
 				695B03E01CBF485E00C29C29 /* dial.png */,
 				695B03E11CBF485E00C29C29 /* hourHand.png */,
@@ -239,6 +242,7 @@
 				695B03C41CBE707D00C29C29 /* Assets.xcassets in Resources */,
 				695B03C21CBE707D00C29C29 /* Main.storyboard in Resources */,
 				695B03DF1CBE772C00C29C29 /* animationPic.png in Resources */,
+				69114F1D1CC087EE00142B32 /* num.png in Resources */,
 				695B03E61CBF485E00C29C29 /* minuteHand.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
