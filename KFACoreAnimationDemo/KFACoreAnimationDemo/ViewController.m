@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "KFAAnchorPointTestViewController.h"
+#import "KFASolidObjeViewController.h"
+#import "KFASpecialLayerViewController.h"
 
 @interface ViewController ()
 
@@ -87,11 +89,24 @@
     [self.navigationController pushViewController:anchorPointTestVC animated:YES];
 }
 
+- (IBAction)goToSolidObjeView:(id)sender {
+    
+    KFASolidObjeViewController *solidObjeVC = [[KFASolidObjeViewController alloc] init];
+    [self.navigationController pushViewController:solidObjeVC animated:YES];
+}
+
+- (IBAction)goToSpecialLayerView:(id)sender {
+    
+    KFASpecialLayerViewController *specialLayerVC = [[KFASpecialLayerViewController alloc] init];
+    [self.navigationController pushViewController:specialLayerVC animated:YES];
+}
+
 // 自定义绘画
 - (void)addAnotherBlueLayer {
     CALayer *blueLayer = [CALayer layer];
     blueLayer.backgroundColor = [UIColor blueColor].CGColor;
     blueLayer.frame = CGRectMake(50.0f, 50.0f, 100.0f, 100.0f);
+    
     // 设置代理
     blueLayer.delegate = self;
     blueLayer.contentsScale = [UIScreen mainScreen].scale;
@@ -99,6 +114,22 @@
     [self.layerView.layer addSublayer:self.blueLayer];
     // 强制重绘 以便调动代理方法, 不同于UIView，图层显示在屏幕上时，CALayer不会自动重绘它的内容
     [self.blueLayer display];
+    
+    // 尽管Core Animation图层存在于3D空间之内，但他们并不都存在同一个3D空间。
+//    CATransform3D outer = CATransform3DIdentity;
+    // 设置透视效果
+//    outer.m34 = -1.0/500.0;
+//    outer = CATransform3DRotate(outer, M_PI_4, 0, 1, 0);
+//    self.layerView.layer.transform = outer;
+    
+//    CATransform3D inner = CATransform3DIdentity;
+//    inner.m34 = -1.0/500.0;
+//    inner = CATransform3DRotate(inner, -M_PI_4, 0, 1, 0);
+//    self.blueLayer.transform = inner;
+    
+    // 对图层绕Y轴做45°的旋转
+//    CATransform3D transform = CATransform3DMakeRotation(M_PI_4, 0, 1, 0);
+//    blueLayer.transform = transform;
 }
 
 - (void)addImage:(UIImage *)image withRect:(CGRect)rect toLayer:(CALayer *)layer {

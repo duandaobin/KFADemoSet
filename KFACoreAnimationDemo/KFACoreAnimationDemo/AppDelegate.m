@@ -10,6 +10,8 @@
 
 @interface AppDelegate ()
 
+@property (nonatomic, assign) BOOL isAllowRotaion; // 是否支持横屏
+
 @end
 
 @implementation AppDelegate
@@ -40,6 +42,14 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+// 禁止横屏
+-(UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {
+    if (self.isAllowRotaion) {
+        return UIInterfaceOrientationMaskAll;
+    }
+    return UIInterfaceOrientationMaskPortrait;
 }
 
 @end

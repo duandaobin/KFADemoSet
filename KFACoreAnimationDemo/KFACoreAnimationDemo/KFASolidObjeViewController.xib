@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KFASolidObjeViewController">
+            <connections>
+                <outlet property="containerView" destination="jWI-rq-wEj" id="8GL-kz-BNw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="faces" destination="mhG-R4-cbs" id="LVL-Te-t6H"/>
+                <outletCollection property="faces" destination="SQT-Nc-hN7" id="Ad5-aq-PVN"/>
+                <outletCollection property="faces" destination="HpV-Mc-GGF" id="izx-yg-VXK"/>
+                <outletCollection property="faces" destination="9fj-ib-GA2" id="0to-ug-cJX"/>
+                <outletCollection property="faces" destination="lf2-la-cJE" id="1Kh-kl-Gcx"/>
+                <outletCollection property="faces" destination="z3n-pt-eOE" id="hQp-S9-hEU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jWI-rq-wEj">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="jWI-rq-wEj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ACu-LR-xPx"/>
+                <constraint firstItem="jWI-rq-wEj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cvx-C1-nX4"/>
+                <constraint firstAttribute="bottom" secondItem="jWI-rq-wEj" secondAttribute="bottom" id="hDM-Tw-l6A"/>
+                <constraint firstAttribute="trailing" secondItem="jWI-rq-wEj" secondAttribute="trailing" id="v6q-cn-C81"/>
+            </constraints>
+        </view>
+        <view contentMode="scaleToFill" id="mhG-R4-cbs">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="壹" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEb-LZ-tdh">
+                    <rect key="frame" x="275" y="275" width="50" height="50"/>
+                    <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="VYG-F2-adL"/>
+                        <constraint firstAttribute="height" constant="50" id="zLB-Vf-Rji"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="hEb-LZ-tdh" firstAttribute="centerY" secondItem="mhG-R4-cbs" secondAttribute="centerY" id="Qaa-1y-CC0"/>
+                <constraint firstItem="hEb-LZ-tdh" firstAttribute="centerX" secondItem="mhG-R4-cbs" secondAttribute="centerX" id="YBO-22-Sew"/>
+            </constraints>
+            <point key="canvasLocation" x="-778" y="230"/>
+        </view>
+        <view contentMode="scaleToFill" id="SQT-Nc-hN7">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="贰" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsY-g2-v8y">
+                    <rect key="frame" x="275" y="275" width="50" height="50"/>
+                    <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="gZy-Dm-lid"/>
+                        <constraint firstAttribute="height" constant="50" id="kpw-si-K5e"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="bsY-g2-v8y" firstAttribute="centerX" secondItem="SQT-Nc-hN7" secondAttribute="centerX" id="6TX-Sf-7oR"/>
+                <constraint firstItem="bsY-g2-v8y" firstAttribute="centerY" secondItem="SQT-Nc-hN7" secondAttribute="centerY" id="bDb-Q7-Jiy"/>
+            </constraints>
+            <point key="canvasLocation" x="-642" y="201"/>
+        </view>
+        <view contentMode="scaleToFill" id="HpV-Mc-GGF">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="叁" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0a3-Y1-51f">
+                    <rect key="frame" x="275" y="275" width="50" height="50"/>
+                    <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="FrK-66-A2c"/>
+                        <constraint firstAttribute="height" constant="50" id="dZi-X2-0gT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="0a3-Y1-51f" firstAttribute="centerY" secondItem="HpV-Mc-GGF" secondAttribute="centerY" id="Itg-Cf-ZiG"/>
+                <constraint firstItem="0a3-Y1-51f" firstAttribute="centerX" secondItem="HpV-Mc-GGF" secondAttribute="centerX" id="KOk-xJ-1rT"/>
+            </constraints>
+            <point key="canvasLocation" x="-642" y="201"/>
+        </view>
+        <view contentMode="scaleToFill" id="9fj-ib-GA2">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="肆" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GfG-KX-6FM">
+                    <rect key="frame" x="275" y="275" width="50" height="50"/>
+                    <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="DJL-m3-MR3"/>
+                        <constraint firstAttribute="width" constant="50" id="sxm-4d-fOl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="GfG-KX-6FM" firstAttribute="centerX" secondItem="9fj-ib-GA2" secondAttribute="centerX" id="F1w-TU-jIb"/>
+                <constraint firstItem="GfG-KX-6FM" firstAttribute="centerY" secondItem="9fj-ib-GA2" secondAttribute="centerY" id="aG4-F7-2C5"/>
+            </constraints>
+            <point key="canvasLocation" x="-642" y="201"/>
+        </view>
+        <view contentMode="scaleToFill" id="lf2-la-cJE">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="伍" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rp4-cG-X4X">
+                    <rect key="frame" x="275" y="275" width="50" height="50"/>
+                    <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="UMQ-76-CJX"/>
+                        <constraint firstAttribute="height" constant="50" id="rgl-ee-cQR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="rp4-cG-X4X" firstAttribute="centerY" secondItem="lf2-la-cJE" secondAttribute="centerY" id="T7b-Be-ZyX"/>
+                <constraint firstItem="rp4-cG-X4X" firstAttribute="centerX" secondItem="lf2-la-cJE" secondAttribute="centerX" id="o22-v5-k98"/>
+            </constraints>
+            <point key="canvasLocation" x="-642" y="201"/>
+        </view>
+        <view contentMode="scaleToFill" id="z3n-pt-eOE">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="陸" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nRR-dL-8WW">
+                    <rect key="frame" x="275" y="275" width="50" height="50"/>
+                    <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="gN0-gr-5mH"/>
+                        <constraint firstAttribute="width" constant="50" id="rpt-VL-kZa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="nRR-dL-8WW" firstAttribute="centerX" secondItem="z3n-pt-eOE" secondAttribute="centerX" id="OTC-Kp-fGj"/>
+                <constraint firstItem="nRR-dL-8WW" firstAttribute="centerY" secondItem="z3n-pt-eOE" secondAttribute="centerY" id="wyO-dz-Sm5"/>
+            </constraints>
+            <point key="canvasLocation" x="-525" y="175"/>
+        </view>
+    </objects>
+</document>
