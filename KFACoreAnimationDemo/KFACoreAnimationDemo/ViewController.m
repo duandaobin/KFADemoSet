@@ -10,8 +10,12 @@
 #import "KFAAnchorPointTestViewController.h"
 #import "KFASolidObjeViewController.h"
 #import "KFASpecialLayerViewController.h"
+#import "KFAImplicitAnimationController.h"
+#import "KFAShowAnimationController.h"
 
-@interface ViewController ()
+static NSString *cellIdentifier = @"cellIdentifier";
+
+@interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UIView *layerView;
 @property (weak, nonatomic) IBOutlet UIView *leftTopView;
@@ -20,6 +24,10 @@
 @property (weak, nonatomic) IBOutlet UIView *rightDownView;
 
 @property (nonatomic, weak) CALayer *blueLayer;
+
+@property (weak, nonatomic) IBOutlet UITableView *btnTableview;
+@property (nonatomic, copy) NSArray *btnArray;
+@property (nonatomic, copy) NSArray *controllerArr;
 
 @end
 
@@ -32,6 +40,8 @@
     [self setLayerViewBackgroudImage];
     [self seperateImageToFourView];
     [self addAnotherBlueLayer];
+    
+    [self setTableview];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
@@ -72,6 +82,38 @@
 }
 
 #pragma mark -
+#pragma mark UITableViewDelegate and UITableViewDatasource
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.btnArray.count;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 44;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    cell.backgroundColor = [UIColor cyanColor];
+    cell.textLabel.text = self.btnArray[indexPath.row];
+    
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSString *className = self.controllerArr[indexPath.row];
+    Class class = NSClassFromString(className);
+    UIViewController *vc = (UIViewController *)[[class alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+#pragma mark -
 #pragma mark CALayerDelegate
 
 - (void)drawLayer:(CALayer *)layer inContext:(CGContextRef)ctx {
@@ -83,22 +125,14 @@
 #pragma mark -
 #pragma mark method
 
-- (IBAction)goToAhchorPointView:(id)sender {
+// 配置tableView
+- (void)setTableview {
     
-    KFAAnchorPointTestViewController *anchorPointTestVC = [[KFAAnchorPointTestViewController alloc] init];
-    [self.navigationController pushViewController:anchorPointTestVC animated:YES];
-}
-
-- (IBAction)goToSolidObjeView:(id)sender {
-    
-    KFASolidObjeViewController *solidObjeVC = [[KFASolidObjeViewController alloc] init];
-    [self.navigationController pushViewController:solidObjeVC animated:YES];
-}
-
-- (IBAction)goToSpecialLayerView:(id)sender {
-    
-    KFASpecialLayerViewController *specialLayerVC = [[KFASpecialLayerViewController alloc] init];
-    [self.navigationController pushViewController:specialLayerVC animated:YES];
+    self.btnTableview.delegate = self;
+    self.btnTableview.dataSource = self;
+    [self.btnTableview registerClass:[UITableViewCell class] forCellReuseIdentifier:cellIdentifier];
+    UIView *footer = [[UIView alloc] init];
+    self.btnTableview.tableFooterView = footer;
 }
 
 // 自定义绘画
@@ -186,6 +220,23 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark -
+#pragma mark getters
+
+- (NSArray *)btnArray {
+    if (!_btnArray) {
+        _btnArray = @[@"AnchorPoint",@"SolidObje",@"SepecialLayer",@"ImplicitAnimation",@"ShowAnimation"];
+    }
+    return _btnArray;
+}
+
+- (NSArray *)controllerArr {
+    if (!_controllerArr) {
+        _controllerArr = @[@"KFAAnchorPointTestViewController",@"KFASolidObjeViewController",@"KFASpecialLayerViewController",@"KFAImplicitAnimationController",@"KFAShowAnimationController"];
+    }
+    return _controllerArr;
 }
 
 @end

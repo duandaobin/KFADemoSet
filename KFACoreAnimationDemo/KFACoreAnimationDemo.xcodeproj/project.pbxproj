@@ -16,6 +16,10 @@
 		69114F2A1CC6133900142B32 /* KFASpecialLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69114F291CC6133900142B32 /* KFASpecialLayerViewController.m */; };
 		69114F2C1CC6241D00142B32 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69114F2B1CC6241D00142B32 /* CoreText.framework */; };
 		691C59AD1CCA2DF600A8E0D0 /* emitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 691C59AC1CCA2DF600A8E0D0 /* emitter.png */; };
+		691C59B21CCDC7EB00A8E0D0 /* KFAImplicitAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 691C59B01CCDC7EB00A8E0D0 /* KFAImplicitAnimationController.m */; };
+		691C59B31CCDC7EB00A8E0D0 /* KFAImplicitAnimationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 691C59B11CCDC7EB00A8E0D0 /* KFAImplicitAnimationController.xib */; };
+		691C59B51CCDECB300A8E0D0 /* plane.png in Resources */ = {isa = PBXBuildFile; fileRef = 691C59B41CCDECB300A8E0D0 /* plane.png */; };
+		691C59B91CCDED7B00A8E0D0 /* KFAShowAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 691C59B81CCDED7B00A8E0D0 /* KFAShowAnimationController.m */; };
 		695B03B91CBE707D00C29C29 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 695B03B81CBE707D00C29C29 /* main.m */; };
 		695B03BC1CBE707D00C29C29 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 695B03BB1CBE707D00C29C29 /* AppDelegate.m */; };
 		695B03BF1CBE707D00C29C29 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 695B03BE1CBE707D00C29C29 /* ViewController.m */; };
@@ -55,6 +59,12 @@
 		69114F291CC6133900142B32 /* KFASpecialLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFASpecialLayerViewController.m; sourceTree = "<group>"; };
 		69114F2B1CC6241D00142B32 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		691C59AC1CCA2DF600A8E0D0 /* emitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emitter.png; sourceTree = "<group>"; };
+		691C59AF1CCDC7EB00A8E0D0 /* KFAImplicitAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFAImplicitAnimationController.h; sourceTree = "<group>"; };
+		691C59B01CCDC7EB00A8E0D0 /* KFAImplicitAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFAImplicitAnimationController.m; sourceTree = "<group>"; };
+		691C59B11CCDC7EB00A8E0D0 /* KFAImplicitAnimationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KFAImplicitAnimationController.xib; sourceTree = "<group>"; };
+		691C59B41CCDECB300A8E0D0 /* plane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plane.png; sourceTree = "<group>"; };
+		691C59B71CCDED7B00A8E0D0 /* KFAShowAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFAShowAnimationController.h; sourceTree = "<group>"; };
+		691C59B81CCDED7B00A8E0D0 /* KFAShowAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFAShowAnimationController.m; sourceTree = "<group>"; };
 		695B03B41CBE707D00C29C29 /* KFACoreAnimationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KFACoreAnimationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		695B03B81CBE707D00C29C29 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		695B03BA1CBE707D00C29C29 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -132,6 +142,25 @@
 			name = KFAFramework;
 			sourceTree = "<group>";
 		};
+		691C59AE1CCDC79500A8E0D0 /* KFAImplicitAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				691C59AF1CCDC7EB00A8E0D0 /* KFAImplicitAnimationController.h */,
+				691C59B01CCDC7EB00A8E0D0 /* KFAImplicitAnimationController.m */,
+				691C59B11CCDC7EB00A8E0D0 /* KFAImplicitAnimationController.xib */,
+			);
+			name = KFAImplicitAnimation;
+			sourceTree = "<group>";
+		};
+		691C59B61CCDED5600A8E0D0 /* KFAShowAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				691C59B71CCDED7B00A8E0D0 /* KFAShowAnimationController.h */,
+				691C59B81CCDED7B00A8E0D0 /* KFAShowAnimationController.m */,
+			);
+			name = KFAShowAnimation;
+			sourceTree = "<group>";
+		};
 		695B03AB1CBE707D00C29C29 = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +183,8 @@
 		695B03B61CBE707D00C29C29 /* KFACoreAnimationDemo */ = {
 			isa = PBXGroup;
 			children = (
+				691C59B61CCDED5600A8E0D0 /* KFAShowAnimation */,
+				691C59AE1CCDC79500A8E0D0 /* KFAImplicitAnimation */,
 				69114F271CC612FF00142B32 /* KFASpecialLayer */,
 				69114F1F1CC0F7CA00142B32 /* KFASolidObje */,
 				69114F1E1CC0D0CA00142B32 /* KFAAnchorPoint */,
@@ -195,6 +226,7 @@
 		695B03DD1CBE76D300C29C29 /* source */ = {
 			isa = PBXGroup;
 			children = (
+				691C59B41CCDECB300A8E0D0 /* plane.png */,
 				691C59AC1CCA2DF600A8E0D0 /* emitter.png */,
 				69114F1C1CC087EE00142B32 /* num.png */,
 				695B03DE1CBE772C00C29C29 /* animationPic.png */,
@@ -293,10 +325,12 @@
 				69114F051CBF6BBD00142B32 /* KFAAnchorPointTestViewController.xib in Resources */,
 				695B03E51CBF485E00C29C29 /* hourHand.png in Resources */,
 				695B03C41CBE707D00C29C29 /* Assets.xcassets in Resources */,
+				691C59B31CCDC7EB00A8E0D0 /* KFAImplicitAnimationController.xib in Resources */,
 				695B03C21CBE707D00C29C29 /* Main.storyboard in Resources */,
 				695B03DF1CBE772C00C29C29 /* animationPic.png in Resources */,
 				69114F241CC0F7FD00142B32 /* KFASolidObjeViewController.xib in Resources */,
 				69114F1D1CC087EE00142B32 /* num.png in Resources */,
+				691C59B51CCDECB300A8E0D0 /* plane.png in Resources */,
 				695B03E61CBF485E00C29C29 /* minuteHand.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,9 +349,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				691C59B21CCDC7EB00A8E0D0 /* KFAImplicitAnimationController.m in Sources */,
 				695B03BF1CBE707D00C29C29 /* ViewController.m in Sources */,
 				69114F081CBF775B00142B32 /* NSTimer+KFAWeakUsing.m in Sources */,
 				695B03BC1CBE707D00C29C29 /* AppDelegate.m in Sources */,
+				691C59B91CCDED7B00A8E0D0 /* KFAShowAnimationController.m in Sources */,
 				69114F231CC0F7FD00142B32 /* KFASolidObjeViewController.m in Sources */,
 				695B03B91CBE707D00C29C29 /* main.m in Sources */,
 				69114F041CBF6BBD00142B32 /* KFAAnchorPointTestViewController.m in Sources */,
