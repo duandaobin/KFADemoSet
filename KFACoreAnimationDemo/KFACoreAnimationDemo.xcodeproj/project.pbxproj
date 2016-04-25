@@ -15,6 +15,7 @@
 		69114F241CC0F7FD00142B32 /* KFASolidObjeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69114F221CC0F7FD00142B32 /* KFASolidObjeViewController.xib */; };
 		69114F2A1CC6133900142B32 /* KFASpecialLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69114F291CC6133900142B32 /* KFASpecialLayerViewController.m */; };
 		69114F2C1CC6241D00142B32 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69114F2B1CC6241D00142B32 /* CoreText.framework */; };
+		691C59AD1CCA2DF600A8E0D0 /* emitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 691C59AC1CCA2DF600A8E0D0 /* emitter.png */; };
 		695B03B91CBE707D00C29C29 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 695B03B81CBE707D00C29C29 /* main.m */; };
 		695B03BC1CBE707D00C29C29 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 695B03BB1CBE707D00C29C29 /* AppDelegate.m */; };
 		695B03BF1CBE707D00C29C29 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 695B03BE1CBE707D00C29C29 /* ViewController.m */; };
@@ -53,6 +54,7 @@
 		69114F281CC6133900142B32 /* KFASpecialLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFASpecialLayerViewController.h; sourceTree = "<group>"; };
 		69114F291CC6133900142B32 /* KFASpecialLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFASpecialLayerViewController.m; sourceTree = "<group>"; };
 		69114F2B1CC6241D00142B32 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		691C59AC1CCA2DF600A8E0D0 /* emitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emitter.png; sourceTree = "<group>"; };
 		695B03B41CBE707D00C29C29 /* KFACoreAnimationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KFACoreAnimationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		695B03B81CBE707D00C29C29 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		695B03BA1CBE707D00C29C29 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 		695B03DD1CBE76D300C29C29 /* source */ = {
 			isa = PBXGroup;
 			children = (
+				691C59AC1CCA2DF600A8E0D0 /* emitter.png */,
 				69114F1C1CC087EE00142B32 /* num.png */,
 				695B03DE1CBE772C00C29C29 /* animationPic.png */,
 				695B03E01CBF485E00C29C29 /* dial.png */,
@@ -283,6 +286,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				691C59AD1CCA2DF600A8E0D0 /* emitter.png in Resources */,
 				695B03E71CBF485E00C29C29 /* secondHand.png in Resources */,
 				695B03C71CBE707D00C29C29 /* LaunchScreen.storyboard in Resources */,
 				695B03E41CBF485E00C29C29 /* dial.png in Resources */,

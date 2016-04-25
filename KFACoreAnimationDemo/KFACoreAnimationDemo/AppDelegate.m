@@ -10,8 +10,6 @@
 
 @interface AppDelegate ()
 
-@property (nonatomic, assign) BOOL isAllowRotaion; // 是否支持横屏
-
 @end
 
 @implementation AppDelegate
