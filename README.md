@@ -21,6 +21,7 @@ MeanWhile, it shows how to use Quartz2D to draw solid line、 dotted line、shap
 This demo shows how to use the APIs of Core Animation.
 
 <img src="https://github.com/KFAaron/KFADemoSet/raw/master/gifPicture/clock.gif" width="200" height="356"/>
+<img src="https://github.com/KFAaron/KFADemoSet/raw/master/gifPicture/emitter.gif" width="200" height="356"/>
 
 # more
 If you have a good demo, just upload it!
