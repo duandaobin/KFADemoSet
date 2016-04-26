@@ -15,6 +15,8 @@
 		69114F241CC0F7FD00142B32 /* KFASolidObjeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69114F221CC0F7FD00142B32 /* KFASolidObjeViewController.xib */; };
 		69114F2A1CC6133900142B32 /* KFASpecialLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69114F291CC6133900142B32 /* KFASpecialLayerViewController.m */; };
 		69114F2C1CC6241D00142B32 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69114F2B1CC6241D00142B32 /* CoreText.framework */; };
+		691C0B2C1CCE8EBC0072AA0B /* KFABufferAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 691C0B2A1CCE8EBC0072AA0B /* KFABufferAnimationController.m */; };
+		691C0B2D1CCE8EBC0072AA0B /* KFABufferAnimationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 691C0B2B1CCE8EBC0072AA0B /* KFABufferAnimationController.xib */; };
 		691C59AD1CCA2DF600A8E0D0 /* emitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 691C59AC1CCA2DF600A8E0D0 /* emitter.png */; };
 		691C59B21CCDC7EB00A8E0D0 /* KFAImplicitAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 691C59B01CCDC7EB00A8E0D0 /* KFAImplicitAnimationController.m */; };
 		691C59B31CCDC7EB00A8E0D0 /* KFAImplicitAnimationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 691C59B11CCDC7EB00A8E0D0 /* KFAImplicitAnimationController.xib */; };
@@ -58,6 +60,9 @@
 		69114F281CC6133900142B32 /* KFASpecialLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFASpecialLayerViewController.h; sourceTree = "<group>"; };
 		69114F291CC6133900142B32 /* KFASpecialLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFASpecialLayerViewController.m; sourceTree = "<group>"; };
 		69114F2B1CC6241D00142B32 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		691C0B291CCE8EBC0072AA0B /* KFABufferAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFABufferAnimationController.h; sourceTree = "<group>"; };
+		691C0B2A1CCE8EBC0072AA0B /* KFABufferAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFABufferAnimationController.m; sourceTree = "<group>"; };
+		691C0B2B1CCE8EBC0072AA0B /* KFABufferAnimationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KFABufferAnimationController.xib; sourceTree = "<group>"; };
 		691C59AC1CCA2DF600A8E0D0 /* emitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emitter.png; sourceTree = "<group>"; };
 		691C59AF1CCDC7EB00A8E0D0 /* KFAImplicitAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFAImplicitAnimationController.h; sourceTree = "<group>"; };
 		691C59B01CCDC7EB00A8E0D0 /* KFAImplicitAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFAImplicitAnimationController.m; sourceTree = "<group>"; };
@@ -142,6 +147,16 @@
 			name = KFAFramework;
 			sourceTree = "<group>";
 		};
+		691C0B281CCE8E740072AA0B /* KFABufferAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				691C0B291CCE8EBC0072AA0B /* KFABufferAnimationController.h */,
+				691C0B2A1CCE8EBC0072AA0B /* KFABufferAnimationController.m */,
+				691C0B2B1CCE8EBC0072AA0B /* KFABufferAnimationController.xib */,
+			);
+			name = KFABufferAnimation;
+			sourceTree = "<group>";
+		};
 		691C59AE1CCDC79500A8E0D0 /* KFAImplicitAnimation */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +198,7 @@
 		695B03B61CBE707D00C29C29 /* KFACoreAnimationDemo */ = {
 			isa = PBXGroup;
 			children = (
+				691C0B281CCE8E740072AA0B /* KFABufferAnimation */,
 				691C59B61CCDED5600A8E0D0 /* KFAShowAnimation */,
 				691C59AE1CCDC79500A8E0D0 /* KFAImplicitAnimation */,
 				69114F271CC612FF00142B32 /* KFASpecialLayer */,
@@ -327,6 +343,7 @@
 				695B03C41CBE707D00C29C29 /* Assets.xcassets in Resources */,
 				691C59B31CCDC7EB00A8E0D0 /* KFAImplicitAnimationController.xib in Resources */,
 				695B03C21CBE707D00C29C29 /* Main.storyboard in Resources */,
+				691C0B2D1CCE8EBC0072AA0B /* KFABufferAnimationController.xib in Resources */,
 				695B03DF1CBE772C00C29C29 /* animationPic.png in Resources */,
 				69114F241CC0F7FD00142B32 /* KFASolidObjeViewController.xib in Resources */,
 				69114F1D1CC087EE00142B32 /* num.png in Resources */,
@@ -352,6 +369,7 @@
 				691C59B21CCDC7EB00A8E0D0 /* KFAImplicitAnimationController.m in Sources */,
 				695B03BF1CBE707D00C29C29 /* ViewController.m in Sources */,
 				69114F081CBF775B00142B32 /* NSTimer+KFAWeakUsing.m in Sources */,
+				691C0B2C1CCE8EBC0072AA0B /* KFABufferAnimationController.m in Sources */,
 				695B03BC1CBE707D00C29C29 /* AppDelegate.m in Sources */,
 				691C59B91CCDED7B00A8E0D0 /* KFAShowAnimationController.m in Sources */,
 				69114F231CC0F7FD00142B32 /* KFASolidObjeViewController.m in Sources */,

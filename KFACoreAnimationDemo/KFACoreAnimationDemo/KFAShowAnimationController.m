@@ -31,6 +31,13 @@
 }
 
 #pragma mark -
+#pragma mark CAAnimationDelegate
+
+- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag {
+    // 可以通过打印查看是否是手动终止动画
+}
+
+#pragma mark -
 #pragma mark method
 
 - (void)addBtn {
@@ -157,6 +164,10 @@
     group.duration = 4.0;
     group.repeatCount = 3;
     
+    // 设置fillMode必须先把removedOnCompletion设置为NO，removedOnCompletion默认为YES，fillMode默认为kCAFillModeRemoved
+    group.removedOnCompletion = NO;
+    group.fillMode = kCAFillModeBackwards;
+    
     [self.planeLayer addAnimation:group forKey:@"fly"];
 }
 
@@ -176,10 +187,6 @@
 - (void)stop {
     [self.planeLayer removeAnimationForKey:@"fly"];
     [self.planeLayer removeAnimationForKey:@"rotation"];
-}
-
-- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag {
-    // 可以通过打印查看是否是手动终止动画
 }
 
 - (void)didReceiveMemoryWarning {

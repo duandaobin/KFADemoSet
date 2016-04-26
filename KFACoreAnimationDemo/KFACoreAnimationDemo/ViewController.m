@@ -12,6 +12,7 @@
 #import "KFASpecialLayerViewController.h"
 #import "KFAImplicitAnimationController.h"
 #import "KFAShowAnimationController.h"
+#import "KFABufferAnimationController.h"
 
 static NSString *cellIdentifier = @"cellIdentifier";
 
@@ -227,14 +228,14 @@ static NSString *cellIdentifier = @"cellIdentifier";
 
 - (NSArray *)btnArray {
     if (!_btnArray) {
-        _btnArray = @[@"AnchorPoint",@"SolidObje",@"SepecialLayer",@"ImplicitAnimation",@"ShowAnimation"];
+        _btnArray = @[@"AnchorPoint",@"SolidObje",@"SepecialLayer",@"ImplicitAnimation",@"ShowAnimation",@"BufferAnimation"];
     }
     return _btnArray;
 }
 
 - (NSArray *)controllerArr {
     if (!_controllerArr) {
-        _controllerArr = @[@"KFAAnchorPointTestViewController",@"KFASolidObjeViewController",@"KFASpecialLayerViewController",@"KFAImplicitAnimationController",@"KFAShowAnimationController"];
+        _controllerArr = @[@"KFAAnchorPointTestViewController",@"KFASolidObjeViewController",@"KFASpecialLayerViewController",@"KFAImplicitAnimationController",@"KFAShowAnimationController",@"KFABufferAnimationController"];
     }
     return _controllerArr;
 }
