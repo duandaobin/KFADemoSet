@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "KFACopyModel.h"
 
 void KFALog(NSArray *array1, NSArray *array2, NSArray *array3);
 
@@ -102,6 +103,24 @@ void KFALog(NSArray *array1, NSArray *array2, NSArray *array3);
     KFALog(mutableArr, self.testStrongArr, self.testCopyArr);
     [mutableArr replaceObjectAtIndex:0 withObject:@"KFA_test7_change"];
     KFALog(mutableArr, self.testStrongArr, self.testCopyArr);
+    
+    KFACopyModel *model1 = [[KFACopyModel alloc] init];
+    model1.number = @"13789892310";
+    NSArray *immutableArr_ = @[model1];
+    self.testStrongArr = immutableArr_;
+    self.testCopyArr = immutableArr_;
+    KFALog(immutableArr_, self.testStrongArr, self.testCopyArr);
+    model1.number = @"137****2310";
+    KFALog(immutableArr_, self.testStrongArr, self.testCopyArr);
+    
+    KFACopyModel *model2 = [[KFACopyModel alloc] init];
+    model2.number = @"13982650942";
+    NSArray *mutableArr_ = @[model2];
+    self.testStrongArr = mutableArr_;
+    self.testCopyArr = mutableArr_;
+    KFALog(mutableArr_, self.testStrongArr, self.testCopyArr);
+    model2.number = @"139****0942";
+    KFALog(mutableArr_, self.testStrongArr, self.testCopyArr);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -113,27 +132,48 @@ void KFALog(NSArray *array1, NSArray *array2, NSArray *array3);
 
 void KFALog(NSArray *array1, NSArray *array2, NSArray *array3) {
     NSMutableString *string1 = nil;
-    for (NSString *objc in array1) {
+    for (id objc in array1) {
+        NSString *objcStr = nil;
+        if ([objc isKindOfClass:[NSString class]]) {
+            objcStr = (NSString *)objc;
+        }else if ([objc isKindOfClass:[KFACopyModel class]]) {
+            KFACopyModel *model = (KFACopyModel *)objc;
+            objcStr = model.number;
+        }
         if (string1 == nil) {
-            string1 = [objc mutableCopy];
+            string1 = [objcStr mutableCopy];
         }else {
-            [string1 appendFormat:@"_%@",objc];
+            [string1 appendFormat:@"_%@",objcStr];
         }
     }
     NSMutableString *string2 = nil;
     for (NSString *objc in array2) {
+        NSString *objcStr = nil;
+        if ([objc isKindOfClass:[NSString class]]) {
+            objcStr = (NSString *)objc;
+        }else if ([objc isKindOfClass:[KFACopyModel class]]) {
+            KFACopyModel *model = (KFACopyModel *)objc;
+            objcStr = model.number;
+        }
         if (string2 == nil) {
-            string2 = [objc mutableCopy];
+            string2 = [objcStr mutableCopy];
         }else {
-            [string2 appendFormat:@"_%@",objc];
+            [string2 appendFormat:@"_%@",objcStr];
         }
     }
     NSMutableString *string3 = nil;
     for (NSString *objc in array3) {
+        NSString *objcStr = nil;
+        if ([objc isKindOfClass:[NSString class]]) {
+            objcStr = (NSString *)objc;
+        }else if ([objc isKindOfClass:[KFACopyModel class]]) {
+            KFACopyModel *model = (KFACopyModel *)objc;
+            objcStr = model.number;
+        }
         if (string3 == nil) {
-            string3 = [objc mutableCopy];
+            string3 = [objcStr mutableCopy];
         }else {
-            [string3 appendFormat:@"_%@",objc];
+            [string3 appendFormat:@"_%@",objcStr];
         }
     }
     NSLog(@"\n\%@\n%@\n%@",string1,string2,string3);
