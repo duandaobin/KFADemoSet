@@ -10,6 +10,7 @@
 #import "KFACopyModel.h"
 
 void KFALog(NSArray *array1, NSArray *array2, NSArray *array3);
+NSString *KFANSStringFromArray(NSArray *array);
 
 @interface ViewController ()
 
@@ -25,7 +26,7 @@ void KFALog(NSArray *array1, NSArray *array2, NSArray *array3);
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
 //    [self testImmutableObjectCopy];
 //    [self testMutableObjectCopy];
 //    [self testImmutableArrayCopy];
@@ -131,50 +132,28 @@ void KFALog(NSArray *array1, NSArray *array2, NSArray *array3);
 @end
 
 void KFALog(NSArray *array1, NSArray *array2, NSArray *array3) {
-    NSMutableString *string1 = nil;
-    for (id objc in array1) {
-        NSString *objcStr = nil;
-        if ([objc isKindOfClass:[NSString class]]) {
-            objcStr = (NSString *)objc;
-        }else if ([objc isKindOfClass:[KFACopyModel class]]) {
-            KFACopyModel *model = (KFACopyModel *)objc;
-            objcStr = model.number;
-        }
-        if (string1 == nil) {
-            string1 = [objcStr mutableCopy];
-        }else {
-            [string1 appendFormat:@"_%@",objcStr];
-        }
-    }
-    NSMutableString *string2 = nil;
-    for (NSString *objc in array2) {
-        NSString *objcStr = nil;
-        if ([objc isKindOfClass:[NSString class]]) {
-            objcStr = (NSString *)objc;
-        }else if ([objc isKindOfClass:[KFACopyModel class]]) {
-            KFACopyModel *model = (KFACopyModel *)objc;
-            objcStr = model.number;
-        }
-        if (string2 == nil) {
-            string2 = [objcStr mutableCopy];
-        }else {
-            [string2 appendFormat:@"_%@",objcStr];
-        }
-    }
-    NSMutableString *string3 = nil;
-    for (NSString *objc in array3) {
-        NSString *objcStr = nil;
-        if ([objc isKindOfClass:[NSString class]]) {
-            objcStr = (NSString *)objc;
-        }else if ([objc isKindOfClass:[KFACopyModel class]]) {
-            KFACopyModel *model = (KFACopyModel *)objc;
-            objcStr = model.number;
-        }
-        if (string3 == nil) {
-            string3 = [objcStr mutableCopy];
-        }else {
-            [string3 appendFormat:@"_%@",objcStr];
-        }
-    }
+
+    NSString *string1 = KFANSStringFromArray(array1);
+    NSString *string2 = KFANSStringFromArray(array2);
+    NSString *string3 = KFANSStringFromArray(array3);
     NSLog(@"\n\%@\n%@\n%@",string1,string2,string3);
+}
+
+NSString *KFANSStringFromArray(NSArray *array) {
+    NSMutableString *string = nil;
+    for (NSString *objc in array) {
+        NSString *objcStr = nil;
+        if ([objc isKindOfClass:[NSString class]]) {
+            objcStr = (NSString *)objc;
+        }else if ([objc isKindOfClass:[KFACopyModel class]]) {
+            KFACopyModel *model = (KFACopyModel *)objc;
+            objcStr = model.number;
+        }
+        if (string == nil) {
+            string = [objcStr mutableCopy];
+        }else {
+            [string appendFormat:@"_%@",objcStr];
+        }
+    }
+    return string;
 }
